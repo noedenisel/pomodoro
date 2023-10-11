@@ -37,7 +37,7 @@ function renderTasks(){
                 <div class="completed"> ${
                     task.completed 
                         ? `<span class="done">"Completada"</span>` 
-                        : `<button class="start-button" data-id="${task.id}">Start</button>`
+                        : `<button class="start-button" data-id="${task.id}"><img src="./img/Group 818.png">Start</button>`
                     }</div>
                 <div class="title">${task.title}</div>
             </div>

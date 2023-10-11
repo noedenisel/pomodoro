@@ -3,8 +3,7 @@ body {
     flex-direction: column; */
     width: 100vw;
     height: 100vh;
-    /* flex-shrink: 0; */
-    /* background: url("./img/1366_2000.jpg"); */
+    background: url("./img/1366_2000.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,6 +35,61 @@ h1 {
     top: 25%
 }
 
+#form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+span{
+color: white;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; 
+margin-bottom: -2px;
+}
+
+input[type="text" i]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 2px solid #D8D8D8;
+    background: #FCFDFE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);}
+
+input[type="submit" i]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px ;
+    background: #F2AC57;
+    color: #FFFDFD;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 20px;
+
+    
+}
+
+#taskName{
+    font-family: 'Mountains of Christmas', serif;
+    color: #FE9A04;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 25%
+}
+
 #app{
     border: 2px solid red;
 }
@@ -48,10 +102,6 @@ h1 {
     border: 2px solid blue;
 } */
 
-#tasks{
-    border: 2px solid green
-}
-
 #form{
     border: 2px solid orange;
     width: 328.998px;
@@ -59,5 +109,55 @@ h1 {
     flex-shrink: 0;
     margin: 0 auto;
 }
+
+
+#tasks{
+    display:flex;
+    flex-direction: column-reverse;
+    border: 3px solid blue
+}
+
+ .task{
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    border: 2px solid green;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 260px;
+    height: 45px;
+    background:  orange;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.start-button{
+    background:  rgba(255, 166, 0, 0.614);
+    color: white;
+    width: 100px;
+    height: 70px;
+    text-align: right;
+}
+
+.start-button img{
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
 
 

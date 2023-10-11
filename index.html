@@ -10,27 +10,35 @@
     <title>Pomodoro</title>
 </head>
 <body>
-    <header>
-        <h1>Pendientes</h1>
-    </header>
-
-  
-      
-    <section class="tasks-container">
-        <div class="form">
-            <form action="" id="form">
-                <input type = "text" id="itTask"/>
-                <input type="submit"  id="bAdd" value="Agregar Tarea"/>
-            </form>
-        </div>
-    </section>
-
-    <section id="time">
-        <div id="taskName"></div>
-        <div id="value"></div>
-    </section>
+    <main>
+       
+        
+        <header>
+            <h1 id="pendientes">Pendientes</h1>
+        </header>
     
-    <div id="tasks"></div>
+          
+        <section class="tasks-container">
+            <div class="form">
+                <form action="" id="form">
+                    <span>Tarea</span>
+                    <input type = "text" id="itTask" placeholder="Agregar tarea pendiente..."/>
+                    <input type="submit"  id="bAdd" value="Agregar Tarea"/>
+                </form>
+            </div>
+        </section>
+    
+        <section id="time">
+            <div id="taskName"></div>
+            <div id="value"></div>
+        </section>
+        
+       
+        <div id="tasks"></div>
+      
+       
+    </main>
+   
     
     <script src="main.js"></script>
 </body>
