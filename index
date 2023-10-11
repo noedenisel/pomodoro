@@ -14,23 +14,30 @@
         <h1>Pendientes</h1>
     </header>
 
-  
-      
-    <section class="tasks-container">
-        <div class="form">
-            <form action="" id="form">
-                <input type = "text" id="itTask"/>
-                <input type="submit"  id="bAdd" value="Agregar Tarea"/>
-            </form>
-        </div>
-    </section>
-
-    <section id="time">
+    <section>
         <div id="taskName"></div>
         <div id="value"></div>
+        <div id="time">
+        </div>
     </section>
+      
+          
     
-    <div id="tasks"></div>
+            <div class="tasks-container">
+                <div class="form">
+                    <form action="" id="form">
+                        <input type = "text" id="itTask"/>
+                        <input type="submit"  id="bAdd" value="Agregar Tarea"/>
+                    </form>
+                </div>
+    
+    
+                <div id="tasks">
+    
+                </div>
+            </div>
+
+ 
     
     <script src="main.js"></script>
 </body>
