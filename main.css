@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    background: url("./img/1366_2000.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid yellow;
+   
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 292px;
+    height: 77px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    color: #FE9A04;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 25%
+}
+
+#app{
+    border: 2px solid red;
+}
+
+#time{
+    border: 2px double indigo
+}
+
+.tasks-container{
+    border: 2px solid blue;
+}
+
+#tasks{
+    border: 2px solid green
+}
