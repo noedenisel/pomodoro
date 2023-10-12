@@ -90,9 +90,6 @@ function startButtonHandler(id) {
     // Oculta el botón "Start" de la tarea actual
     const startButton = document.querySelector(`[data-id="${id}"]`);
     startButton.style.display = "none";
-
-
-
     
 
     // Oculta solo la tarea que se está ejecutando
@@ -117,6 +114,10 @@ function startButtonHandler(id) {
 
     // Agrega la clase al cuerpo de la página para cambiar el fondo
     document.body.classList.add("active-background");
+
+     // Cambia el fondo del elemento "time" al hacer clic en "Start"
+     const timeElement = document.querySelector("#time");
+     timeElement.style.backgroundColor = "rgba(245, 245, 245, 0.058)";
 
     timer = setInterval(() => {
         timeHandler(id);
