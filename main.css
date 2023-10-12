@@ -194,9 +194,14 @@ input[type="submit" i]{
     align-items: center;
     align-content: center;
     margin: 20px auto;
-    width: 328.998px;
+    width: 328px;
     height: 42.573px;
     border-radius: 2px;
     background:  rgba(255, 166, 0, 0.614);
     color: white;
+    font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
 }

@@ -11,12 +11,21 @@
 </head>
 <body>
     <main>
-       
-        <header>
-            <h1 id="pendientes">Pendientes</h1>
-        </header>
-    
-          
+        <section id="time">
+            <div id="taskName"></div>
+            <div id="inProgressMessage"></div>
+            <div class="reloj">
+                <div id="minutes" style="display: none;"></div>
+                <div id="seconds" style="display: none;"></div>
+            </div>
+        </section>
+        
+        <div id="tasks"></div>
+
+        <h1 id="pendientes">Pendientes</h1>
+        
+        
+
         <section class="tasks-container">
             <div class="form">
                 <form action="" id="form">
@@ -26,23 +35,9 @@
                 </form>
             </div>
         </section>
-        <section id="time">
-            <div id="taskName"></div>
-            <div id="inProgressMessage"></div>
-            <div class="reloj">
-                <div id="minutes"></div>
-                <div id="seconds"></div>
-            </div>
-           
-        </section>
+       
         
-       
-        <div id="tasks"></div>
-      
-       
     </main>
-   
-    
     <script src="main.js"></script>
 </body>
 </html>
