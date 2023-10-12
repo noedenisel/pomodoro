@@ -6,10 +6,15 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0 auto; 
+
 }
 
 .active-background {
-    background: url("./img/comedor-nigth.jpg")
+    background: url("./img/comedor-nigth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; 
 }
 
 #time{
@@ -17,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 1% auto;
-    width: 35%;
+    width: auto;
     height: 50%;
     border-radius: 10px;
 }
@@ -80,9 +85,10 @@ body {
 
 .pendientes-list{
     margin: 0 auto;
-    width: 35%;
+    width: auto;
     background-color: rgba(245, 245, 245, 0.115);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -99,6 +105,10 @@ h1 {
 #tasks{
     display:flex;
     flex-direction: column-reverse;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
  .task{
@@ -108,9 +118,9 @@ h1 {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
-    padding: 2px;
+
 }
 
 
@@ -158,10 +168,11 @@ h1 {
 
 .tasks-container {
     margin: 1% auto;
-    width: 35%;
+    width: auto;
     height: 30%; 
     background-color: rgba(245, 245, 245, 0.115);
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 
