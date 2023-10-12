@@ -171,7 +171,6 @@ input[type="submit" i]{
 
 }
 #minutes, #seconds {
-
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -187,4 +186,17 @@ input[type="submit" i]{
     line-height: 28px;
     text-align: center; 
     margin: 0 5px; 
+}
+
+#inProgressMessage span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 20px auto;
+    width: 328.998px;
+    height: 42.573px;
+    border-radius: 2px;
+    background:  rgba(255, 166, 0, 0.614);
+    color: white;
 }

@@ -1,5 +1,5 @@
 const tasks = []
-let time = 0
+let time = 1500
 let timer = null
 let task = null
 let current = null
@@ -52,6 +52,7 @@ function renderTasks() {
                         }
                     </div>
                     <div class="title">${task.title}</div>
+                  
                 </div>
             </div>
         `;
@@ -87,6 +88,15 @@ function startButtonHandler(id) {
     const taskContainer = startButton.closest('.list-task');
     taskContainer.style.display = "none";
 
+    // Crea un elemento <span> para el mensaje "En progreso..."
+    const inProgressSpan = document.createElement("span");
+    inProgressSpan.textContent = "En progreso...";
+
+    // Agrega el <span> al contenedor de mensajes "En progreso..."
+    const inProgressContainer = document.getElementById("inProgressMessage");
+    inProgressContainer.innerHTML = ""; // Limpia cualquier mensaje anterior
+    inProgressContainer.appendChild(inProgressSpan);
+
     // Agrega la clase al cuerpo de la página para cambiar el fondo
     document.body.classList.add("active-background");
 
@@ -112,7 +122,7 @@ function timeHandler(id){
 
 function startBreak() {
     time = 5 * 60;
-    taskName.textContent = "break";
+    taskName.textContent = "Break";
     timerBreak = setInterval(() => {
         timerBreakHandler();
     }, 1000);
