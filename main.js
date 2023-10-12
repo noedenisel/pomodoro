@@ -66,6 +66,13 @@ function startButtonHandler(id){
     const taskIndex = tasks.findIndex(task => task.id === id)
     taskName.textContent = tasks[taskIndex].title
 
+      // Oculta el botón "Start"
+      const startButton = document.querySelector(`[data-id="${id}"]`);
+      startButton.style.display = "none";
+  
+      // Agrega la clase al cuerpo de la página para cambiar el fondo
+      document.body.classList.add("active-background");
+
     timer = setInterval( ()=> {
         timeHandler(id)
     }, 1000)
@@ -95,19 +102,22 @@ function startBreak(){
    }, 1000 )
 }
 
-function timerBreakHandler(){
-    time --
-    renderTime()
+function timerBreakHandler() {
+    time--;
+    renderTime();
 
-    if( time === 0 ) {
-        clearInterval(timerBreak)
-        current = null
-        timerBreak = null
-        taskName.textContent = ""
-        renderTasks()
+    if (time === 0) {
+        clearInterval(timerBreak);
+        current = null;
+        timerBreak = null;
+        taskName.textContent = "";
 
+        // Restablece el fondo y muestra nuevamente el botón "Start"
+        document.body.classList.remove("active-background");
+        renderTasks();
     }
 }
+
 
 function renderTime(){
     const timeDiv = document.querySelector("#time #value")
