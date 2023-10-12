@@ -163,3 +163,27 @@ input[type="submit" i]{
     background: url("./img/comedor-nigth.jpg")
 }
 
+.reloj{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+}
+#minutes, #seconds {
+    border: 2px solid greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 110px;
+    height: 102px;
+    background: orange;
+    color: white;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center; /* Para centrar el texto verticalmente */
+    margin: 0 5px; /* Agrega un espacio entre los elementos */
+}
