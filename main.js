@@ -20,7 +20,10 @@ form.addEventListener("submit", e => {
             createTask(itTask.value)
             itTask.value= " "
             renderTasks()
+            document.querySelector("#pendientes").style.display = "block";
         }
+
+        
 })
 
 function createTask(value){
@@ -58,6 +61,8 @@ function renderTasks() {
         `;
         
         tasksContainer.innerHTML += taskHtml; // Agrega la tarea al contenedor
+    
+     
     });
 
     const startButtons = document.querySelectorAll(".task .start-button");
@@ -71,6 +76,8 @@ function renderTasks() {
             }
         });
     });
+
+
 }
 
 
@@ -84,6 +91,10 @@ function startButtonHandler(id) {
     const startButton = document.querySelector(`[data-id="${id}"]`);
     startButton.style.display = "none";
 
+
+
+    
+
     // Oculta solo la tarea que se está ejecutando
     const taskContainer = startButton.closest('.list-task');
     taskContainer.style.display = "none";
@@ -96,6 +107,13 @@ function startButtonHandler(id) {
     const inProgressContainer = document.getElementById("inProgressMessage");
     inProgressContainer.innerHTML = ""; // Limpia cualquier mensaje anterior
     inProgressContainer.appendChild(inProgressSpan);
+
+
+     // Muestra el temporizador al hacer clic en "Start"
+     const minutesDiv = document.querySelector("#minutes");
+     const secondsDiv = document.querySelector("#seconds");
+     minutesDiv.style.display = "inline";
+     secondsDiv.style.display = "inline";
 
     // Agrega la clase al cuerpo de la página para cambiar el fondo
     document.body.classList.add("active-background");

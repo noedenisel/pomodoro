@@ -1,38 +1,97 @@
 body {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background: url("./img/1366_2000.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 3px solid yellow;
-   
+    margin: 0 auto
 }
 
-header {
-    /* display: flex;
+.active-background {
+    background: url("./img/comedor-nigth.jpg")
+}
+
+#time{
+    border: 2px double indigo;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center; */
-    width: 292px;
-    height: 77px;
-    flex-shrink: 0;
-    margin: 0 auto;
+    justify-content: center;
+    margin: 1% auto;
+    width: 40%;
+    height: 50%;
+    /* background-color: rgba(245, 245, 245, 0.146); */
 }
 
-h1 {
+#inProgressMessage span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2% ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background:  rgba(255, 166, 0, 0.266);
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#taskName{
     font-family: 'Mountains of Christmas', serif;
     color: #FE9A04;
     text-align: center;
-    font-size: 48px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 25%
+    margin: 1% auto;
+}
+
+.reloj{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+
+}
+
+#minutes, #seconds {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    height: 120px;
+    background: orange;
+    color: white;
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center; 
+    margin: 0 5px; 
+}
+
+
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    color:orange;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #form{
@@ -40,8 +99,7 @@ h1 {
     flex-direction: column;
     box-sizing: border-box;
     justify-content: center;
-    margin: 0 auto;
-    
+    margin: 2% auto;
 }
 
 span{
@@ -79,31 +137,19 @@ input[type="submit" i]{
     
 }
 
-#taskName{
-    font-family: 'Mountains of Christmas', serif;
-    color: #FE9A04;
-    text-align: center;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    top: 25%
-}
+
 
 #app{
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
-/* #time{
-    border: 2px double indigo
-} */
 
 /* .tasks-container{
     border: 2px solid blue;
 } */
 
 #form{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     width: 328.998px;
     height: 148.573px;
     flex-shrink: 0;
@@ -114,7 +160,8 @@ input[type="submit" i]{
 #tasks{
     display:flex;
     flex-direction: column-reverse;
-    border: 3px solid blue
+    /* border: 3px solid blue; */
+    
 }
 
  .task{
@@ -125,7 +172,7 @@ input[type="submit" i]{
     align-items: center;
     align-content: center;
     width: 500px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0 auto;
     padding: 2px;
 }
@@ -159,49 +206,7 @@ input[type="submit" i]{
 }
 
 
-.active-background {
-    background: url("./img/comedor-nigth.jpg")
-}
 
-.reloj{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
 
-}
-#minutes, #seconds {
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100px;
-    height: 120px;
-    background: orange;
-    color: white;
-    font-family: 'Mountains of Christmas', serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center; 
-    margin: 0 5px; 
-}
 
-#inProgressMessage span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 20px auto;
-    width: 328px;
-    height: 42.573px;
-    border-radius: 2px;
-    background:  rgba(255, 166, 0, 0.614);
-    color: white;
-    font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px;
-}
+

@@ -11,24 +11,26 @@
 </head>
 <body>
     <main>
-        <section id="time">
-            <div id="taskName"></div>
+        <section id="time">   
             <div id="inProgressMessage"></div>
+            <div id="taskName"></div>
+         
             <div class="reloj">
                 <div id="minutes" style="display: none;"></div>
                 <div id="seconds" style="display: none;"></div>
             </div>
         </section>
-        
-        <div id="tasks"></div>
 
-        <h1 id="pendientes">Pendientes</h1>
-        
-        
+        <div class="pendientes-list">
+              <h1 id="pendientes" style="display: none;">Pendientes</h1>
+        <div id="tasks"></div>
+        </div>
+      
 
         <section class="tasks-container">
             <div class="form">
                 <form action="" id="form">
+                    <h1>Agregar Tarea</h1>
                     <span>Tarea</span>
                     <input type = "text" id="itTask" placeholder="Agregar tarea pendiente..."/>
                     <input type="submit"  id="bAdd" value="Agregar Tarea"/>
