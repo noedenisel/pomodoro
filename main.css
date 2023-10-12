@@ -171,12 +171,13 @@ input[type="submit" i]{
 
 }
 #minutes, #seconds {
-    border: 2px solid greenyellow;
+
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 110px;
-    height: 102px;
+    width: 100px;
+    height: 120px;
     background: orange;
     color: white;
     font-family: 'Mountains of Christmas', serif;
@@ -184,6 +185,6 @@ input[type="submit" i]{
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    text-align: center; /* Para centrar el texto verticalmente */
-    margin: 0 5px; /* Agrega un espacio entre los elementos */
+    text-align: center; 
+    margin: 0 5px; 
 }
