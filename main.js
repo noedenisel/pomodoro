@@ -9,6 +9,7 @@ const itTask = document.querySelector("#itTask")
 const form = document.querySelector("#form")
 const taskName = document.querySelector("#time #taskName")
 
+
 renderTime()
 renderTasks()
 
@@ -69,6 +70,11 @@ function startButtonHandler(id){
       // Oculta el botón "Start"
       const startButton = document.querySelector(`[data-id="${id}"]`);
       startButton.style.display = "none";
+
+     // Oculta la tarea que se está ejecutando
+     const title = startButton.closest('.task').querySelector('.title');
+     title.style.display = "none";
+      
   
       // Agrega la clase al cuerpo de la página para cambiar el fondo
       document.body.classList.add("active-background");
