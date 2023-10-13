@@ -1,5 +1,5 @@
 const tasks = []
-let time = 1500
+let time = 60
 let timer = null
 let task = null
 let current = null
@@ -82,10 +82,10 @@ function renderTasks() {
 
 
 function startButtonHandler(id) {
-    time = 25 * 60;
+    time = 0.5 * 60;
     currentTaskId = id; // Registra la tarea actual
     const taskIndex = tasks.findIndex(task => task.id === id);
-    taskName.textContent = tasks[taskIndex].title;
+    taskName.textContent = tasks[taskIndex].title ;
 
     // Oculta el botón "Start" de la tarea actual
     const startButton = document.querySelector(`[data-id="${id}"]`);
@@ -119,6 +119,8 @@ function startButtonHandler(id) {
      const timeElement = document.querySelector("#time");
      timeElement.style.backgroundColor = "rgba(245, 245, 245, 0.058)";
 
+
+
     timer = setInterval(() => {
         timeHandler(id);
     }, 1000);
@@ -140,7 +142,9 @@ function timeHandler(id){
 }
 
 function startBreak() {
-    time = 5 * 60;
+
+    hideInProgressMessage()
+    time = 0.5 * 60;
     taskName.textContent = "Break";
     timerBreak = setInterval(() => {
         timerBreakHandler();
@@ -157,6 +161,7 @@ function timerBreakHandler() {
         timerBreak = null;
         taskName.textContent = "";
 
+        hideInProgressMessage()
         // Restablece el fondo y muestra nuevamente el botón "Start" de la tarea actual
         document.body.classList.remove("active-background");
         renderTasks();
@@ -179,4 +184,10 @@ function renderTime() {
 function markCompleted(id){
     const taskIndex = tasks.findIndex(task => task.id === id)
     tasks[taskIndex].completed = true
+}
+
+// Agrega la siguiente función para ocultar el mensaje "En progreso"
+function hideInProgressMessage() {
+    const inProgressContainer = document.getElementById("inProgressMessage");
+    inProgressContainer.innerHTML = "";
 }
