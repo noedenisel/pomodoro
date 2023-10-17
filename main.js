@@ -51,7 +51,7 @@ function renderTasks() {
                 <div class="task">
                     <div class="completed">
                         ${task.completed 
-                            ? `<span class="done">Completada</span>` 
+                            ? `<span class="done"><img src="./img/dibujar-marca-de-verificacion.png"></span>` 
                             : `<button class="start-button" data-id="${task.id}"><img src="./img/Group 818.png">Start</button>`
                         }
                     </div>
@@ -100,6 +100,8 @@ function startButtonHandler(id) {
     const inProgressContainer = document.getElementById("inProgressMessage");
     inProgressContainer.innerHTML = ""; 
     inProgressContainer.appendChild(inProgressSpan);
+
+
 
 
      const minutesDiv = document.querySelector("#minutes");
